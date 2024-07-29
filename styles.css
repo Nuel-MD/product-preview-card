@@ -1,0 +1,146 @@
+body{
+    background-color: hsl(30, 38%, 92%);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.container {
+    display: flex;
+    flex-direction: row;
+    
+    
+}
+.image {
+    
+    height: 500px; /* Adjust height as needed */
+    background-image: url('./images/image-product-desktop.jpg');
+    background-size: cover;
+    background-position: center;
+    border-bottom-left-radius: 15px;
+    border-top-left-radius: 15px;
+    
+}
+.Perfume{
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    text-align: left;
+    padding: 35px;
+    
+    background-color: hsl(0, 0%, 100%);
+}
+.item {
+    flex: 1; /* Each item takes an equal share of the available space */
+    min-width: 200px; /* Minimum width of each item */
+    max-width: 400px; /* Maximum width of each item */
+    height: auto;
+    
+  }
+
+
+
+.fraunce{
+  font-family: "Fraunces", serif;
+  font-optical-sizing: auto;
+  
+}
+
+.montserrat {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  
+}
+.perfume {
+    letter-spacing: 4px;
+    color: hsl(228, 12%, 48%);
+}
+
+.note {
+    font-size: 14px;
+    
+    color: hsl(228, 12%, 48%);
+}
+h1 {
+    font-size: 37px;
+    color: hsl(212, 21%, 14%);
+    
+}
+button {
+    padding: 12px;
+    background-color: hsl(158, 36%, 37%);
+    color: hsl(0, 0%, 100%);
+    border: 0px;
+    border-radius: 10px;
+    width: 100%;
+    margin-top: 30px;
+    cursor: url('./images/pointinghand.svg') , pointer;
+    
+    
+}
+button:hover{
+    background-color:rgb(10, 68, 46) ;
+}
+.green{
+    color: hsl(158, 36%, 37%);
+    font-weight: bolder;
+    display: inline-block;
+    font-size: 37px;
+    margin-top: 31.5px;
+    margin-bottom: 31.5px;
+    margin-right: 15px;
+}
+.small{
+    color: hsl(228, 12%, 48%);
+    text-decoration: line-through;
+    display: inline-block;
+    margin-top: 42px;
+    margin-bottom: 42px;
+    font-size: 16px;
+   
+}
+.money {
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+    flex-direction: row;
+    height: 100px;
+    
+}
+
+button > svg {
+    margin-right: 10px;
+}
+
+@media (max-width: 500px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+        max-width: 80vw;  /* vh to vw */
+        max-height: 90vh;
+    }
+
+    .image {
+        background-image: url('./images/image-product-mobile.jpg');
+        background-size: cover;
+        background-position: center;
+        min-height: 40vh;
+        height: 100%;  /* Let the content determine the height */
+        min-width: 80vw;  /* vh to vw */
+        border-radius: 15px 15px 0 0;  /* Adjust border radius for mobile */
+        padding: 10px;
+    }
+
+    .Perfume {
+        border-radius: 0 0 15px 15px;  /* Adjust border radius for mobile */
+        min-width: 80vw;  /* vh to vw */
+        min-height: auto;
+        padding: 10px;
+        padding-bottom: 20px;
+    }
+
+    .item {
+        max-width: 80vw;  /* vh to vw */
+        max-height: 90%;
+    }
+}
